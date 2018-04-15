@@ -1,7 +1,13 @@
 package com.crm.qa.util;
 
-public class Testutil {
+import com.crm.qa.base.TestBase;
 
-	public static long IMPLICIT_WAIT=10;
-	public static long PAGE_LOAD_WAIT=10;
+public class Testutil extends TestBase {
+
+	public static long IMPLICIT_WAIT=100;
+	public static long PAGE_LOAD_WAIT=100;
+	
+	public void Switchtoframe() {
+		driver.switchTo().frame("mainpanel");	
+		}
 }

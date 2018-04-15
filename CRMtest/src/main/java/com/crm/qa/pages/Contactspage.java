@@ -1,0 +1,27 @@
+package com.crm.qa.pages;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+import com.crm.qa.base.TestBase;
+
+public class Contactspage extends TestBase{
+
+
+	@FindBy(xpath="//a[contains(text(),'Contacts')]")
+	WebElement contacts;
+	
+public Contactspage() {
+	
+	PageFactory.initElements(driver, this);
+}
+
+public boolean contactslabel() {
+	
+	return contacts.isDisplayed();
+}
+
+
+}
+

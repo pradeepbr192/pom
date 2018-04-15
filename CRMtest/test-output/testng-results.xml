@@ -1,37 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="1" ignored="0" total="5" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="31058" started-at="2018-04-14T16:34:13Z" finished-at="2018-04-14T16:34:44Z">
+  <suite name="Free CRM suite" duration-ms="285381" started-at="2018-04-15T07:40:00Z" finished-at="2018-04-15T07:44:46Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="31058" started-at="2018-04-14T16:34:13Z" finished-at="2018-04-14T16:34:44Z">
-      <class name="com.crm.qa.testcases.Loginpagetest">
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.crm.qa.testcases.Loginpagetest@3ffc5af1]" name="setup" is-config="true" duration-ms="16766" started-at="2018-04-14T22:04:13Z" finished-at="2018-04-14T22:04:30Z">
+    <test name="Default test" duration-ms="285381" started-at="2018-04-15T07:40:00Z" finished-at="2018-04-15T07:44:46Z">
+      <class name="com.crm.qa.testcases.Homepagetest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.crm.qa.testcases.Homepagetest@5e5792a0]" name="setup" is-config="true" duration-ms="13720" started-at="2018-04-15T13:10:00Z" finished-at="2018-04-15T13:10:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="Loginpagetitletest()[pri:1, instance:com.crm.qa.testcases.Loginpagetest@3ffc5af1]" name="Loginpagetitletest" duration-ms="41" started-at="2018-04-14T22:04:30Z" finished-at="2018-04-14T22:04:30Z">
+        <test-method status="PASS" signature="Homepagetitletest()[pri:1, instance:com.crm.qa.testcases.Homepagetest@5e5792a0]" name="Homepagetitletest" duration-ms="32" started-at="2018-04-15T13:10:14Z" finished-at="2018-04-15T13:10:14Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Loginpagetitletest -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.crm.qa.testcases.Loginpagetest@3ffc5af1]" name="teardown" is-config="true" duration-ms="317" started-at="2018-04-14T22:04:30Z" finished-at="2018-04-14T22:04:30Z">
+        </test-method> <!-- Homepagetitletest -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.crm.qa.testcases.Homepagetest@5e5792a0]" name="teardown" is-config="true" duration-ms="368" started-at="2018-04-15T13:10:14Z" finished-at="2018-04-15T13:10:14Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-        <test-method status="PASS" signature="setup()[pri:0, instance:com.crm.qa.testcases.Loginpagetest@3ffc5af1]" name="setup" is-config="true" duration-ms="13567" started-at="2018-04-14T22:04:30Z" finished-at="2018-04-14T22:04:44Z">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.crm.qa.testcases.Homepagetest@5e5792a0]" name="setup" is-config="true" duration-ms="13714" started-at="2018-04-15T13:10:29Z" finished-at="2018-04-15T13:10:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method status="PASS" signature="loginTest()[pri:2, instance:com.crm.qa.testcases.Loginpagetest@3ffc5af1]" name="loginTest" duration-ms="142" started-at="2018-04-14T22:04:44Z" finished-at="2018-04-14T22:04:44Z">
+        <test-method status="FAIL" signature="Verifyusername()[pri:2, instance:com.crm.qa.testcases.Homepagetest@5e5792a0]" name="Verifyusername" duration-ms="200073" started-at="2018-04-15T13:10:42Z" finished-at="2018-04-15T13:14:02Z">
+          <exception class="org.openqa.selenium.NoSuchFrameException">
+            <message>
+              <![CDATA[No frame element found by name or id mainpanelBuild info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'System info: host: 'PRADEEP-PC', ip: '172.20.89.65', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_152'Driver info: driver.version: unknown]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchFrameException: No frame element found by name or id mainpanelBuild info: version: '3.8.1', revision: '6e95a6684b', time: '2017-12-01T18:33:54.468Z'System info: host: 'PRADEEP-PC', ip: '172.20.89.65', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_152'Driver info: driver.version: unknownat org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:940)at com.crm.qa.util.Testutil.Switchtoframe(Testutil.java:11)at com.crm.qa.testcases.Homepagetest.Verifyusername(Homepagetest.java:49)at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)at java.lang.reflect.Method.invoke(Unknown Source)at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)at org.testng.internal.Invoker.invokeMethod(Invoker.java:571)at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:707)at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:979)at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)at org.testng.TestRunner.privateRun(TestRunner.java:648)at org.testng.TestRunner.run(TestRunner.java:505)at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)at org.testng.SuiteRunner.run(SuiteRunner.java:364)at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)at org.testng.TestNG.runSuitesLocally(TestNG.java:1116)at org.testng.TestNG.runSuites(TestNG.java:1028)at org.testng.TestNG.run(TestNG.java:996)at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchFrameException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Verifyusername -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.crm.qa.testcases.Homepagetest@5e5792a0]" name="teardown" is-config="true" duration-ms="448" started-at="2018-04-15T13:14:03Z" finished-at="2018-04-15T13:14:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.crm.qa.testcases.Homepagetest@5e5792a0]" name="setup" is-config="true" duration-ms="14785" started-at="2018-04-15T13:14:17Z" finished-at="2018-04-15T13:14:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="Contactspagelink()[pri:3, instance:com.crm.qa.testcases.Homepagetest@5e5792a0]" name="Contactspagelink" duration-ms="12992" started-at="2018-04-15T13:14:32Z" finished-at="2018-04-15T13:14:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Contactspagelink -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.crm.qa.testcases.Homepagetest@5e5792a0]" name="teardown" is-config="true" duration-ms="466" started-at="2018-04-15T13:14:45Z" finished-at="2018-04-15T13:14:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.crm.qa.testcases.Homepagetest -->
+      <class name="com.crm.qa.testcases.Loginpagetest">
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.crm.qa.testcases.Loginpagetest@26653222]" name="setup" is-config="true" duration-ms="14139" started-at="2018-04-15T13:10:14Z" finished-at="2018-04-15T13:10:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="Loginpagetitletest()[pri:1, instance:com.crm.qa.testcases.Loginpagetest@26653222]" name="Loginpagetitletest" duration-ms="25" started-at="2018-04-15T13:10:28Z" finished-at="2018-04-15T13:10:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Loginpagetitletest -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.crm.qa.testcases.Loginpagetest@26653222]" name="teardown" is-config="true" duration-ms="192" started-at="2018-04-15T13:10:28Z" finished-at="2018-04-15T13:10:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method status="PASS" signature="setup()[pri:0, instance:com.crm.qa.testcases.Loginpagetest@26653222]" name="setup" is-config="true" duration-ms="13985" started-at="2018-04-15T13:14:03Z" finished-at="2018-04-15T13:14:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="loginTest()[pri:2, instance:com.crm.qa.testcases.Loginpagetest@26653222]" name="loginTest" duration-ms="119" started-at="2018-04-15T13:14:17Z" finished-at="2018-04-15T13:14:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:com.crm.qa.testcases.Loginpagetest@3ffc5af1]" name="teardown" is-config="true" duration-ms="164" started-at="2018-04-14T22:04:44Z" finished-at="2018-04-14T22:04:44Z">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:com.crm.qa.testcases.Loginpagetest@26653222]" name="teardown" is-config="true" duration-ms="245" started-at="2018-04-15T13:14:17Z" finished-at="2018-04-15T13:14:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
       </class> <!-- com.crm.qa.testcases.Loginpagetest -->
     </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+  </suite> <!-- Free CRM suite -->
 </testng-results>
